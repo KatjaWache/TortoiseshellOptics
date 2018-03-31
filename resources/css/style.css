@@ -5,29 +5,42 @@ body {
   font-size: 18px;
   line-height: 1.4;
 }
-
+.flex {
+  display: flex;
+}
 .container {
   width: 960px;
   margin: auto;
 }
-.flex-container {
+
+/*company header*/
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: cadetblue;
+  color: white;
+  align-items: center;
 }
 
-/*main banner*/
+nav img {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  heigth: 1.5rem;
+}
 nav div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-nav  {
-  padding: 1rem 0;
-  background-color: cadetblue;
-  color: white;
-  padding: 1rem 0;
-  display: flex;
 
+ul li {
+  display: inline;
+  padding: 2rem;
 }
+
 header {
   background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   background-repeat: no-repeat;
@@ -36,20 +49,114 @@ header {
   height: 30rem;
   padding: 1rem;
 }
-ul li {
-  display: inline;
+/*Hero-Bannr*/
 
+.main-banner {
+    background-color: white;
+    display: inline-block;
+    margin-top: 10rem;
+    margin-right: -2rem;
+    line-height: 2.4rem;
+    padding: 0.75rem 5rem;
 }
-ul .main-nav{
-  display: flex;
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.flex {
   justify-content: flex-end;
 }
 
-header .flex-container {
+/*service-section*/
+.services {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
- img nav {
-   padding: 0 2rem;
-   height: 1.5rem;
- }
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+
+}
+.item ,img {
+  width: 3.5rem;
+}
+
+.items , .document-icon {
+  margin-bottom: 1rem;
+}
+
+/*Information*/
+
+.information {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+.title{
+  width: 35%;
+  margin-right: 5rem;
+
+}
+.title div {
+  background-color: cadetblue;
+  width: 10rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+/*Footer*/
+
+footer {
+  background-color: azure;
+  height: 1.5rem;
+  padding: 4rem 2rem;
+}
+footer img {
+  padding-right: 1rem;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+/*Responsive design*/
+
+/*Tablet*/
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    padding: 0rem;
+    height: 22rem;
+  }
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 470px)
