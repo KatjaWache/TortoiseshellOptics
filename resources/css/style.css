@@ -41,6 +41,7 @@ ul li {
   padding: 2rem;
 }
 
+
 header {
   background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   background-repeat: no-repeat;
@@ -157,6 +158,83 @@ footer div {
   }
 }
 
-/*Mobile*/
+/*small-size tablet*/
 
-@media only screen and (max-width: 470px)
+@media only screen and (min-width: 780px) {
+
+.small-screen {
+  display: none;
+ }
+}
+@media only screen and (max-width: 780px) {
+ .main {
+    display: none;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 570px) {
+   .container {
+    width: 100%;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+  nav span {
+    display: none;
+  }
+  .main-banner {
+    padding: 0 1rem;
+    margin-top: 9rem;
+    margin-bottom; 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%
+
+  }
+  h1 {
+    font-size: 1rem;
+     text-align: center;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+  .items {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+    margin-top: 3.77rem;
+  }
+  .information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0rem;
+  }
+  .title {
+    width: 100%;
+    margin-right: 0rem;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+.title div {
+  margin: 0rem;
+  width: 100%;
+
+    }
+  p {
+    padding-top: 1rem;
+  }
+  footer span {
+    display: none;
+  }
+footer div {
+  display: block;
+  text-align: center;
+
+}
